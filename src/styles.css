@@ -1,0 +1,77 @@
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+
+/* Center the Title with a Shadow Effect */
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1976d2;
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Stylish Card with Shadow */
+mat-card {
+  max-width: 450px;
+  margin: 20px auto;
+  padding: 25px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect for the Card */
+mat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Input Field Styling */
+mat-form-field {
+  width: 100%;
+}
+
+/* Button Styling with Hover Effects */
+button {
+  margin: 10px;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+/* Primary Button Hover */
+button[color="primary"]:hover {
+  background-color: #1565c0;
+  transform: scale(1.05);
+}
+
+/* Accent Button Hover */
+button[color="accent"]:hover {
+  background-color: #c2185b;
+  transform: scale(1.05);
+}
+
+/* Stepper Toolbar */
+.mat-toolbar {
+  background: linear-gradient(135deg, #2196F3, #1E88E5);
+  color: white;
+  font-size: 18px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Stepper Row Styling */
+.mat-toolbar-row, .mat-toolbar-single-row {
+  flex-direction: column !important;
+  white-space: nowrap !important;
+}
+
+/* Make Stepper Header Look Nice */
+mat-step-header {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
